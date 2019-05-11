@@ -14,7 +14,13 @@
   Then alert your name using dot notation.
 */
 
-//Code here
+const me = {
+  name: 'sam',
+  age: 21,
+}
+
+const answer1 = me.name;
+console.log(answer1);
 
 ////////// PROBLEM 2 //////////
 
@@ -23,47 +29,61 @@
   Have the values to those keys be strings that are equal to your favorite thing in that category.
 */
 
-//Code here
+const favoriteThings = {
+  band: 'The Early November',
+  food: 'pizza', 
+  person: 'Corissa',
+  book: 'Magic Tree House',
+  movie: 'Harry Potter',
+  holiday: 'Christmas'
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
   and then another key named 'brand' with the value being your favorite brand.
 */
 
-//Code here
+favoriteThings.car = 'truck';
+favoriteThings.brand = 'Dodge'
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-//Code here
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 ////////// PROBLEM 3 //////////
 
 /*
-  Create an empty Object called backPack.
+  Create an empty Object called 
   Now, create a variable called 'item' and set it equal to the string 'firstPocket'.
-  Using bracket notation, add a 'firstPocket' key (or property) to backPack, using 'item'.
+  Using bracket notation, add a 'firstPocket' key (or property) to  using 'item'.
   Set the value of that key to 'chapstick'.
-  Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack.
+  Using dot notation, add another key (or property) to your object that is named color, with the value being the color of your 
 */
 
-//Code here
+const backPack = {};
+const item = 'firstPocket';
+backPack['firstPocket'] = item;
+backPack.firstPocket = 'chapstick';
+backPack.color = 'Black';
+
 
 /*
-  After you do the above, alert your entire backPack object.
+  After you do the above, alert your entire object.
 */
 
-//Code here
+// alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
-Instead, console.log your whole backPack object and then check out the console.
+Instead, console.log your whole object and then check out the console.
 */
 
-//Code here
+console.log(backPack);
 
 ////////// PROBLEM 4 //////////
 
@@ -84,7 +104,8 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+user2.name = 'Bryan G. Smith';
+user2.email = 'bryan.smith@devmounta.in'
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
